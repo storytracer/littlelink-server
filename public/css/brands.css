@@ -429,6 +429,18 @@ button {
   background-color: #fff;
 }
 
+/* YouTube Music */
+.button.button-youtubemusic {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* Venmo */
+.button.button-venmo {
+  color: #ffffff;
+  background-color: #3d95ce;
+}
+
 /* Status */
 .button.button-status {
   color: #000;
@@ -503,8 +515,26 @@ button {
   background-color: #fff
 }
 
+/* Vero */
+.button.button-vero {
+  color: #fff;
+  background-color: #000
+}
+
 /* MyAnimeList */
 .button.button-myAnimeList {
   color: #133a95;
   background-color: #fff
+}
+
+/* 500px */
+.button.button-500px {
+  color: #000;
+  background-color: #fff
+}
+
+/* jetphotos */
+.button.button-jetphotos {
+  color: #ffffff;
+  background-color: #000000;
 }

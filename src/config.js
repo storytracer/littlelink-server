@@ -106,6 +106,8 @@ export const runtimeConfig =
         AMAZON_AFFILIATE: window?.env?.AMAZON_AFFILIATE,
         AMAZON_WISHLIST: window?.env?.AMAZON_WISHLIST,
         APPLE_MUSIC: window?.env?.APPLE_MUSIC,
+        YOUTUBE_MUSIC: window?.env?.YOUTUBE_MUSIC,
+        VENMO: window?.env?.VENMO,
         STATUS: window?.env?.STATUS,
         MATRIX: window?.env?.MATRIX,
         ANILIST: window?.env?.ANILIST,
@@ -117,11 +119,15 @@ export const runtimeConfig =
         LINE: window?.env?.LINE,
         KAKAOTALK: window?.env?.KAKAOTALK,
         DESIGNBYHUMANS: window?.env?.DESIGNBYHUMANS,
+        VERO: window?.env?.VERO,
         DOCKERHUB: window?.env?.DOCKERHUB,
         MYANIMELIST: window?.env?.MYANIMELIST,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
         SHARE: window?.env?.SHARE,
+        DROP_SHADOW: window?.env?.DROP_SHADOW,
+        FIVEHUNDREDPX: window?.env?.FIVEHUNDREDPX,
+        JETPHOTOS: window?.env?.JETPHOTOS,
       }
     : {
         // server
@@ -399,6 +405,10 @@ export const runtimeConfig =
         APPLE_MUSIC: nodeIsProduction
           ? process.env.APPLE_MUSIC
           : process.env.RAZZLE_APPLE_MUSIC,
+        YOUTUBE_MUSIC: nodeIsProduction
+          ? process.env.YOUTUBE_MUSIC
+          : process.env.RAZZLE_YOUTUBE_MUSIC,
+        VENMO: nodeIsProduction ? process.env.VENMO : process.env.RAZZLE_VENMO,
         STATUS: nodeIsProduction
           ? process.env.STATUS
           : process.env.RAZZLE_STATUS,
@@ -426,6 +436,7 @@ export const runtimeConfig =
         DESIGNBYHUMANS: nodeIsProduction
           ? process.env.DESIGNBYHUMANS
           : process.env.RAZZLE_DESIGNBYHUMANS,
+        VERO: nodeIsProduction ? process.env.VERO : process.env.RAZZLE_VERO,
         DOCKERHUB: nodeIsProduction
           ? process.env.DOCKERHUB
           : process.env.RAZZLE_DOCKERHUB,
@@ -439,4 +450,13 @@ export const runtimeConfig =
           ? process.env.MATOMO_SITE_ID
           : process.env.RAZZLE_MATOMO_SITE_ID,
         SHARE: nodeIsProduction ? process.env.SHARE : process.env.RAZZLE_SHARE,
+        DROP_SHADOW: nodeIsProduction
+          ? process.env.DROP_SHADOW
+          : process.env.RAZZLE_DROP_SHADOW,
+        FIVEHUNDREDPX: nodeIsProduction
+          ? process.env.FIVEHUNDREDPX
+          : process.env.RAZZLE_FIVEHUNDREDPX,
+        JETPHOTOS: nodeIsProduction
+          ? process.env.JETPHOTOS
+          : process.env.RAZZLE_JETPHOTOS,
       };

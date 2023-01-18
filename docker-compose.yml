@@ -91,6 +91,8 @@ services:
       - AMAZON_AFFILIATE=https://affiliate-program.amazon.co.uk/
       - AMAZON_WISHLIST=https://www.amazon.co.uk/b?node=22758010031
       - APPLE_MUSIC=https://www.apple.com/uk/apple-music/
+      - YOUTUBE_MUSIC=https://music.youtube.com/playlist?list=
+      - VENMO=https://venmo.com/
       - STATUS=https://status.im/
       - MATRIX=https://matrix.to/
       - ANILIST=https://anilist.co/
@@ -103,6 +105,7 @@ services:
       - KAKAOTALK=https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko
       - DESIGNBYHUMANS=https://www.designbyhumans.com/
       - DOCKERHUB=https://hub.docker.com/
+      - VERO=https://vero.co/
       - MYANIMELIST=https://myanimelist.net/
       - OG_SITE_NAME=Techno Tim Live (OG)
       - OG_TITLE=Techno Tim (OG)
@@ -116,6 +119,8 @@ services:
       - TWITTER_SITE=@TechnoTimLive
       - TWITTER_CREATOR=@TechnoTimLive
       - SHARE=https://technotim.live
+      - FIVEHUNDREDPX=https://500px.com/
+
     ports:
       - 8080:3000
     restart: unless-stopped

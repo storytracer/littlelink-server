@@ -63,6 +63,8 @@ import streamlabsLogo from '../../icons/streamlabs.svg';
 import privatebinLogo from '../../icons/privatebin.svg';
 import amazonLogo from '../../icons/amazon.svg';
 import applemusicLogo from '../../icons/applemusic.svg';
+import youtubemusicLogo from '../../icons/youtubemusic.svg';
+import venmoLogo from '../../icons/venmo.svg';
 import statusLogo from '../../icons/status.svg';
 import matrixLogo from '../../icons/matrix.svg';
 import anilistLogo from '../../icons/anilist.svg';
@@ -75,7 +77,10 @@ import lineLogo from '../../icons/linemessenger.svg';
 import kakaoLogo from '../../icons/kaokotalk.svg';
 import designByHumansLogo from '../../icons/designbyhumans.svg';
 import dockerhubLogo from '../../icons/docker.svg';
+import veroLogo from '../../icons/vero.svg';
 import myAnimeListLogo from '../../icons/myanimelist.svg';
+import fiveHundredPXLogo from '../../icons/500px.svg';
+import jetphotosLogo from '../../icons/jetphotos.svg';
 
 function Home(props) {
   let order = [];
@@ -407,6 +412,7 @@ function Home(props) {
                 <Button
                   name="mastodon"
                   href={runtimeConfig.MASTODON}
+                  rels="me noopener noreferrer"
                   displayName="Mastodon"
                   logo={mastodonLogo}
                   order={buttonOrder('MASTODON')}
@@ -691,6 +697,24 @@ function Home(props) {
                   order={buttonOrder('APPLE_MUSIC')}
                 />
               )}
+              {runtimeConfig.YOUTUBE_MUSIC && (
+                <Button
+                  name="youtubemusic"
+                  href={runtimeConfig.YOUTUBE_MUSIC}
+                  displayName="YouTube Music"
+                  logo={youtubemusicLogo}
+                  order={buttonOrder('YOUTUBE_MUSIC')}
+                />
+              )}
+              {runtimeConfig.VENMO && (
+                <Button
+                  name="venmo"
+                  href={runtimeConfig.VENMO}
+                  displayName="Venmo"
+                  logo={venmoLogo}
+                  order={buttonOrder('VENMO')}
+                />
+              )}
               {runtimeConfig.STATUS && (
                 <Button
                   name="status"
@@ -799,6 +823,15 @@ function Home(props) {
                   order={buttonOrder('DOCKERHUB')}
                 />
               )}
+              {runtimeConfig.VERO && (
+                <Button
+                  name="vero"
+                  href={runtimeConfig.VERO}
+                  displayName="VERO"
+                  logo={veroLogo}
+                  order={buttonOrder('VERO')}
+                />
+              )}
               {runtimeConfig.MYANIMELIST && (
                 <Button
                   name="myAnimeList"
@@ -806,6 +839,24 @@ function Home(props) {
                   displayName="MyAnimeList"
                   logo={myAnimeListLogo}
                   order={buttonOrder('MYANIMELIST')}
+                />
+              )}
+              {runtimeConfig.FIVEHUNDREDPX && (
+                <Button
+                  name="500px"
+                  href={runtimeConfig.FIVEHUNDREDPX}
+                  displayName="500px"
+                  logo={fiveHundredPXLogo}
+                  order={buttonOrder('FIVEHUNDREDPX')}
+                />
+              )}
+              {runtimeConfig.JETPHOTOS && (
+                <Button
+                  name="jetphotos"
+                  href={runtimeConfig.JETPHOTOS}
+                  displayName="JetPhotos"
+                  logo={jetphotosLogo}
+                  order={buttonOrder('JETPHOTOS')}
                 />
               )}
             </Sort>
